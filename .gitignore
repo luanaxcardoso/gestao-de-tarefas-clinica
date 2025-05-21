@@ -1,0 +1,50 @@
+# Bytecode do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambiente virtual
+venv/
+.env/
+.venv/
+ENV/
+env/
+
+# Arquivos de configuração de IDEs
+.vscode/
+.idea/
+
+# Arquivos temporários e de sistema
+*.log
+*.sqlite3
+*.db
+.DS_Store
+Thumbs.db
+
+# Arquivos do sistema operacional
+*.swp
+*.swo
+
+# Cache do pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Arquivos de testes ou temporários
+*.bak
+*.tmp
+
+# Static/uploads (caso tenha uploads temporários)
+uploads/
+
+# Arquivos de build (se usar algum build tool)
+build/
+dist/
+*.egg-info/
+
+# Pytest e cobertura
+.cache/
+.pytest_cache/
+htmlcov/
+
+# Arquivos de ambiente/senhas (se usar dotenv)
+.env

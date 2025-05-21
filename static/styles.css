@@ -1,0 +1,76 @@
+body {
+    font-family: 'Vollkorn', serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  
+  .table-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  table th,
+  table td {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  input,
+  select {
+    font-size: 0.95rem;
+    padding: 6px;
+  }
+  
+  button {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+  
+  .btn-success {
+    background-color: #198754;
+    border-color: #198754;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+    transition: 0.3s ease-in-out;
+  }
+  
+  @media (max-width: 768px) {
+    .table-container {
+      padding: 10px;
+    }
+  
+    .navbar-brand {
+      font-size: 1.4rem;
+    }
+  
+    table th,
+    table td {
+      font-size: 0.9rem;
+    }
+  
+    button {
+      font-size: 0.8rem;
+    }
+  }
+  

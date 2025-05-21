@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda Clínica Estética</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../static/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container text-center">
+    <div class="navbar-brand text-success">
+      <div>Clínica Estética - La Belle</div>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>        
+</nav>
+
+  <div class="container table-container mt-4">
+    <h3 class="text-center mb-3 text-success">Agenda - Esteticista Ana</h3>
+    <div class="table-responsive">
+      <table id="agenda-table" class="table table-hover table-bordered">
+        <thead class="table-success">
+          <tr>
+            <th class="fs-5 text-center">Data</th>
+            <th class="fs-5 text-center">Hora</th>
+            <th class="fs-5 text-center">Paciente</th>
+            <th class="fs-5 text-center">Procedimento</th>
+            <th class="fs-5 text-center">Opções</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for id in agenda %}
+          <tr>
+            <td class="text-center">{{ agenda[id]['data'] }}</td>
+            <td class="text-center">{{ agenda[id]['hora'] }}</td>
+            <td class="text-center">{{ agenda[id]['paciente'] }}</td>
+            <td class="text-center">{{ agenda[id]['procedimento'] }}</td>
+            <td class="text-center">
+              <a href="/excluir/{{ id }}">
+                <button class="btn btn-danger btn-sm">Excluir</button>
+              </a>
+            </td>
+          </tr>
+          {% endfor %}
+          <tr>
+            <form method="post" action="/adicionar">
+              <td><input type="date" name="data" required class="form-control text-center" /></td>
+              <td><input type="time" name="hora" required class="form-control text-center" /></td>
+              <td><input type="text" name="paciente" placeholder="Nome do paciente" required class="form-control text-center" /></td>
+              <td><input type="text" name="procedimento" placeholder="Procedimento" required class="form-control text-center" /></td>
+              <td class="text-center">
+                <button type="submit" class="btn btn-success btn-sm">Adicionar</button>
+              </td>
+            </form>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
