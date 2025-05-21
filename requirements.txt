@@ -4,3 +4,5 @@ jinja2
 starlette
 pydantic
 python-multipart
+
+azure-functions
