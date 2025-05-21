@@ -43,6 +43,5 @@ Aplicação desenvolvida com **FastAPI** para agendamento de atendimentos em uma
 
 ## O projeto é uma PAS funcional, com lógica implementada e interface construída.
 
-|-------------------------------------------|:--------:|:-------------:|
 | Interface com formulários e tabelas       | ✅       | IAS           |
 | Funcionalidades de adicionar/excluir dados| ✅       | PAS           |
