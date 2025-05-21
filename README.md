@@ -41,12 +41,13 @@ Aplicação desenvolvida com **FastAPI** para agendamento de atendimentos em uma
    ```
 
 ## Technologias Utilizadas
+- **Linguagem:** Python
 - **Backend:** FastAPI
 - **JSON:** Armazenamento dos dados
 - **Frontend:** HTML, CSS, Bootstrap
 - **Nuvem:** Microsoft Azure (deploy e hospedagem da aplicação) 
 
-## O projeto é uma PAS funcional, com lógica implementada e interface construída.
+## O projeto é uma PAS funcional, com lógica e interface construída.
 
 | Interface com formulários e tabelas       | ✅       | IAS           |
 | Funcionalidades de adicionar/excluir dados| ✅       | PAS           |
