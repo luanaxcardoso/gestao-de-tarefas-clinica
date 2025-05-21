@@ -35,6 +35,11 @@ Aplicação desenvolvida com **FastAPI** para agendamento de atendimentos em uma
    pip install -r requirements.txt
    ```
 
+5. Execute o servidor:
+   ```bash
+   uvicorn main:app --reload
+   ```
+
 ## Technologias Utilizadas
 - **Backend:** FastAPI
 - **JSON:** Armazenamento dos dados
