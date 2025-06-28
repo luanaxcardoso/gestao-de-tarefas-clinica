@@ -1,12 +1,3 @@
-# Projeto Integrado - UNIFEOB
-
-**Disciplinas:** Computação em Nuvem e Qualidade de Software  
-**Alunas:**  
-- Juliana Gomes da Silva – RA: 1012023200178  
-- Luana Aparecida Cardoso – RA: 1012023100720  
-
----
-
 ## Aplicação Web para Gestão de Tarefas de uma Clínica Estética
 
 Aplicação desenvolvida com **FastAPI** para agendamento de atendimentos em uma clínica estética. A interface web permite visualizar, adicionar e excluir compromissos de diferentes profissionais.
